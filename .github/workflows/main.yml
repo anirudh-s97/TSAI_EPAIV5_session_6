@@ -21,8 +21,8 @@ jobs:
         max-score: 250
         setup-command: pip install pytest
     - name: Autograding Reporter
-      uses: classroom-resources/autograding-grading-reporter@v1
+      uses: autograding-grading-reporter@v1
       env:
-        TEST_SESSION5_RESULTS: "${{steps.test_session5.outputs.result}}"
+        TEST_SESSION5_RESULTS: "${{steps.test_session6.outputs.result}}"
       with:
         runners: test_session6
